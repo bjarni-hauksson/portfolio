@@ -3783,3 +3783,20 @@ input, select, textarea {
 			}
 
 		}
+
+/* Spotlight Reverse */
+
+.spotlight.reverse {
+	flex-direction: row-reverse;
+}
+
+.spotlight.reverse .image {
+	margin-left: 0;
+	margin-right: 4em; /* sama bil og original */
+}
+
+.spotlight.reverse .content {
+	padding-left: 0;
+	padding-right: 0;
+}
+
