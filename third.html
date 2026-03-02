@@ -19,8 +19,8 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1>Generic</h1>
-						<p>Ipsum dolor sit amet nullam</p>
+						<h1>Verkefni 3 - 3D prentun og 3D skönnun</h1>
+						<p>Sítrónusafari og jarðaber</p>
 					</header>
 
 				<!-- Main -->
@@ -28,18 +28,205 @@
 
 						<!-- Content -->
 							<section id="content" class="main">
-								<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
-								<h2>Magna feugiat lorem</h2>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis fames ac ante ipsum primis in faucibus.</p>
-								<p>Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Consequat leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit enim turpis lorem ipsum dolor sit amet feugiat. Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet est velit quis lorem.</p>
-								<h2>Tempus veroeros</h2>
-								<p>Cep risus aliquam gravida cep ut lacus amet. Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae ante vestibulum ante. Blandit. Ante accumsan nisi eu placerat gravida placerat adipiscing in risus fusce vitae ac mi accumsan nunc in accumsan tempor blandit aliquet aliquet lobortis. Ultricies blandit lobortis praesent turpis. Adipiscing accumsan adipiscing adipiscing ac lacinia cep. Orci blandit a iaculis adipiscing ac. Vivamus ornare laoreet odio vis praesent nunc lorem mi. Erat. Tempus sem faucibus ac id. Vis in blandit. Nascetur ultricies blandit ac. Arcu aliquam. Accumsan mi eget adipiscing nulla. Non vestibulum ac interdum condimentum semper commodo massa arcu.</p>
+								<h2>Inngangur</h2>
+								Markmið þessa verkefnis er að hanna og þrívíddarprenta lítinn hlut sem væri erfitt að gera með frádráttarframleiðslu
+								<!-- ══ 3D VIEWER ══ -->
+								<div id="model-viewer-2" style="
+									width: 100%;
+									aspect-ratio: 16 / 9;
+									border-radius: 8px;
+									overflow: hidden;
+									position: relative;
+									background: #000000;
+									box-shadow: 0 6px 30px rgba(0,0,0,0.3);
+									cursor: grab;
+									margin-bottom: 2em;
+								">
+									<canvas id="three-canvas-2" style="width:100%;height:100%;display:block;"></canvas>
+
+							
+
+									<div id="model-loader-2" style="position:absolute;bottom:0;left:0;height:3px;width:0%;background:#5fffb0;transition:width 0.2s;z-index:5;"></div>
+									<div style="position:absolute;bottom:10px;right:12px;font-size:0.7rem;color:rgba(255,255,255,0.35);pointer-events:none;">drag · scroll · right-drag to pan</div>
+								</div>
+								<!-- ══ END 3D VIEWER ══ -->
+								
+<h2>Hugmyndaflakk og vangaveltur</h2>
+<p>Hér er aðallatriði að hanna eitthvað sem er ekki hægt að auðvelda framleiða með „subtractive" aðferðum, þ.a. þegar maður byrjar með gegnheilt form af efni og mótar það með því að t.d. saga, fræsa, eða pússa það.</p>
+<p>Eftir smá hugmyndaflakk þar sem m.a. kom til greina kertastjaki og gírhjól lendi ég að lokum á sítrónusafara. Það kom aðallega vegna þess að mér fannst formið flott og langaði að prófa teikna það. Það vantaði líka á heimilið en ég hugsa að það sé betra að fá safara úr plasti sem uppfyllir rétta staðla og er framleiddur í betra umhverfi, þ.a. þessi verður meira til skrauts.</p>
+<p>Þá fór ég að skoða það sem hafði verið hannað áður á netinu og fann margar flottar útfærslur, sem má sjá á <a href="#">þessum hlekk</a>.</p>
+
+<h2>Ástæður fyrir samlagningarframleiðslu</h2>
+<p>Sítrónusafari kallar ekkert endilega á hönnun sem ekki væri hægt að framkvæma með frádráttarframleiðslu
+	en til að uppfylla kröfur verkefnisins hafði ég hann, þ.a. erfitt væri að gera hann með einfaldri frádráttarframleiðslu.</p>
+<p>Helsta takmörkun frádrátttarframleiðslu eru holrými, því tólin komast ekki þangað inn.
+	Hluturinn er með 15% infill, þ.a. að hann er að mestu holur að innan sem væru auðvitað ómögulegt með frádráttarframleiðslu. Það er samt ekki hluti af hönnun hlutarins.</p>
+<p>Þetta eru þrjú atriði í hönnun hlutarins sem væri erfitt að gera með frádráttarframleiðslu:</p>
+<ul>
+    <li>Annað atriði eru götin á botni safarans sem myndu vera áskorun fyrir 3-ása fræsara því hann myndi eiga í vandræðum með að komast að þeim.</li>
+    <li>Stórt atriði í þessu væri líka bara eyðsla á efni. Ef að það ætti að fræsa safarann úr gegnheilum kubbi af plasti yrði sóunin stjarnfræðileg.</li>
+</ul>
+
+<h2>Hönnun</h2>
+<p>Safarinn var teiknaður í Fusion 360. Ég notaðist við parametríska hönnun. Safarinn er hannaður til að passa fullkomlega ofan á glösin heima hjá mér. 
+	Til að ákvarða stærðirnar mældi ég sítrónu sem ég fann heima sem hafði ca. 5 cm ummál og glasið sem var með 7,5 cm ummál</p>
+								<figure style="text-align: center">
+									<img src="images/param_h%C3%B6nnun.JPG" alt="" style="width: 80%; height=auto">
+								</figure>
+<h2>Prentun</h2>
+<p>Þegar búið var að teikna hlutinn í Fusion er einfalt að koma honum í þrívíddarprentarann. Maður „exportar" hlutinn sem .3mf skrá í Fusion. Næst þarf að hlaða niður <a href="https://www.prusa3d.com/page/prusaslicer_424/">PrusaSlicer</a>. Þegar þangað er komið er bara hægt að draga hlutinn inn.</p>
+								<figure style="text-align: center">
+									<img src="images/3d_prusa_slice.JPG" alt="" style="width: 80%; height=auto">
+								</figure>
+<h2>Prófun</h2>
+<p>Það voru smá áhyggjur af „overhang" hlutarins, þ.e. efsta hluta hans. Ég hafði pælt í því við hönnunina og studdist við skemmtilegt plakat sem Maggi talaði um og má sjá hér fyrir neðan.</p>
+<p>Þar er talað um að láta hringlaga form vera tárlaga til að þau hrynji ekki. Ég gerði það en vildi samt vera alveg viss, þ.a. ég prentaði fjórðung af safaranum í 70% stærð til að lágmarka efnisnotkun og tíma prentunar. Það kom mjög vel út og ég ályktaði að ef oddurinn nær að standa einn og sér mun hann klárlega halda þegar restin styður við hann sömuleiðis.</p>
+<div style="display:flex; gap:16px; margin-bottom:1.5em;">
+	<figure style="flex:1; margin:0;">
+        <img src="images/3d_prof_m1.JPEG" alt="" style="width:100%; border-radius:4px;">
+    </figure>
+	<figure style="flex:1; margin:0;">
+        <img src="images/3d_saman.JPEG" alt="" style="width:100%; border-radius:4px;">
+    </figure>	
+	</div>
+<h2>Lokaprentun</h2>
+<p>Þetta var prentað í Prusa MK3+.</p>
+<div style="display:flex; gap:16px; margin-bottom:1.5em;">
+    <figure style="flex:1; margin:0;">
+        <img src="images/3d_m1.JPEG" alt="" style="width:100%; border-radius:4px;">
+    </figure>
+    <figure style="flex:1; margin:0;">
+        <img src="images/3d_m4.JPEG" alt="" style="width:100%; border-radius:4px;">
+    </figure>
+	<figure style="flex:1; margin:0;">
+        <img src="images/3d_m3.JPEG" alt="" style="width:100%; border-radius:4px;">
+    </figure>								
+</div>
+
+								<h2>Þrívíddar líkan</h2>
+								<p>Fyrir þrívíddarskönnunina er áhugaverðast að skanna eitthvað sem hefur áferð og form. Eftir smá hugsun ákvað ég að búa til líkan af jarðaberi.
+									Ég notaði Polycam app sem ég hlóð niður í símann minn. Þar tók ég síðan 150 myndir af jarðaberinu sem er hámarkið fyrir fríu útgáfu forritsins.
+									Þegar því var lokið sá forritið um rest, ég stillti það þannig að smáatriðin kæmu sem best út.
+									Hér að neðan er hægt að skoða þrívíddar líkanið.</p>
+
+								<!-- ══ 3D VIEWER ══ -->
+								<div id="model-viewer" style="
+									width: 100%;
+									aspect-ratio: 16 / 9;
+									border-radius: 8px;
+									overflow: hidden;
+									position: relative;
+									background: #1a1a2e;
+									box-shadow: 0 6px 30px rgba(0,0,0,0.3);
+									cursor: grab;
+									margin-bottom: 2em;
+								">
+									<canvas id="three-canvas" style="width:100%;height:100%;display:block;"></canvas>
+
+							
+
+									<div id="model-loader" style="position:absolute;bottom:0;left:0;height:3px;width:0%;background:#5fffb0;transition:width 0.2s;z-index:5;"></div>
+									<div style="position:absolute;bottom:10px;right:12px;font-size:0.7rem;color:rgba(255,255,255,0.35);pointer-events:none;">drag · scroll · right-drag to pan</div>
+								</div>
+								<!-- ══ END 3D VIEWER ══ -->
+
+								<p>Líkanið kom nokkuð vel út en eftir á hyggja hefði ég kannski átt að velja stærri hlut með dýpri áferð. Áferðin næst ekki mjög vel og einnig að huga betur að lýsingunni. 
+								En heilt yfir skemmtilegt að prófa svona hugbúnað.</p>
+
 								<ul class="actions">
 									<li><a href="index.html" class="button">Til baka á forsíðu</a></li>
 								</ul>
-						</section>
+							</section>
 
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.161/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.161/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader }    from 'three/addons/loaders/GLTFLoader.js';
+import { OBJLoader }     from 'three/addons/loaders/OBJLoader.js';
+
+function createViewer(viewerId, canvasId, loaderId, modelUrl) {
+  const canvas   = document.getElementById(canvasId);
+  const viewerEl = document.getElementById(viewerId);
+  const loaderEl = document.getElementById(loaderId);
+
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.1;
+  renderer.shadowMap.enabled = true;
+  renderer.setClearColor(0x1a1a2e);
+
+  const scene = new THREE.Scene();
+  scene.fog = new THREE.Fog(0x1a1a2e, 15, 30);
+  scene.add(new THREE.GridHelper(20, 30, 0x222233, 0x1c1c2e));
+
+  const camera = new THREE.PerspectiveCamera(45, 1, 0.01, 500);
+  camera.position.set(3, 2, 4);
+
+  const controls = new OrbitControls(camera, renderer.domElement);
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.07;
+
+  scene.add(new THREE.AmbientLight(0xffffff, 0.6));
+  const key = new THREE.DirectionalLight(0xffffff, 2.5);
+  key.position.set(5, 8, 5); key.castShadow = true;
+  scene.add(key);
+  const fill = new THREE.DirectionalLight(0x8899ff, 0.8);
+  fill.position.set(-5, 2, -3); scene.add(fill);
+
+  function resize() {
+    const w = viewerEl.clientWidth, h = viewerEl.clientHeight;
+    renderer.setSize(w, h, false);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+  }
+  new ResizeObserver(resize).observe(viewerEl);
+  resize();
+
+  (function loop(){ requestAnimationFrame(loop); controls.update(); renderer.render(scene, camera); })();
+
+  const isObj = modelUrl.toLowerCase().endsWith('.obj');
+  const loader = isObj ? new OBJLoader() : new GLTFLoader();
+  loaderEl.style.width = '10%';
+  loader.load(modelUrl,
+    raw => {
+      const model = isObj ? raw : raw.scene;
+      
+	  scene.add(model);
+      const box = new THREE.Box3().setFromObject(model);
+      const size = box.getSize(new THREE.Vector3());
+      const center = box.getCenter(new THREE.Vector3());
+      const s = 2 / Math.max(size.x, size.y, size.z);
+      model.scale.setScalar(s);
+      model.position.sub(center.multiplyScalar(s));
+      model.position.y += size.y * s * 0.5;
+	  const d = 3;
+      camera.position.set(d, d*0.6, d);
+      controls.target.set(0, size.y*s*0.4, 0);
+      controls.update();
+      loaderEl.style.width = '100%';
+      setTimeout(() => loaderEl.style.width = '0%', 500);
+    },
+    e => { if (e.lengthComputable) loaderEl.style.width = (10 + 80 * e.loaded/e.total) + '%'; },
+    console.error
+  );
+}
+
+// ← Add one line per model:
+createViewer('model-viewer',   'three-canvas',   'model-loader',   'models/3_1_2026.glb');
+createViewer('model-viewer-2', 'three-canvas-2', 'model-loader-2', 'models/tfram_verkefni_03_test_01.obj');
+</script>
 					</div>
+				
 
 				<!-- Footer -->
 					<footer id="footer">
