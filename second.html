@@ -29,7 +29,7 @@
 						<!-- Content -->
 							<section id="content" class="main">
 								<h2>Inngangur</h2>
-								Markmið þessa verkefnis er að hanna og þrívíddarprenta lítinn hlut sem væri erfitt að gera með frádráttarframleiðslu
+								Markmið þessa verkefnis er að hanna parametrískt, gernelgt pressfit módel og framleiða það síðan með geislaskera. Hér fyrir neðan má sjá þrívíddarlíkan af hillunni sem var búin til.
 								<!-- ══ 3D VIEWER ══ -->
 								<div id="model-viewer-2" style="
 									width: 100%;
@@ -51,46 +51,91 @@
 								</div>
 								<!-- ══ END 3D VIEWER ══ -->
 								
-<h2>Hugmyndaflakk og vangaveltur</h2>
-<p>Hér er aðallatriði að hanna eitthvað sem er ekki hægt að auðvelda framleiða með „subtractive" aðferðum, þ.a. þegar maður byrjar með gegnheilt form af efni og mótar það með því að t.d. saga, fræsa, eða pússa það.</p>
-<p>Eftir smá hugmyndaflakk þar sem m.a. kom til greina kertastjaki og gírhjól lendi ég að lokum á sítrónusafara. Það kom aðallega vegna þess að mér fannst formið flott og langaði að prófa teikna það. Það vantaði líka á heimilið en ég hugsa að það sé betra að fá safara úr plasti sem uppfyllir rétta staðla og er framleiddur í betra umhverfi, þ.a. þessi verður meira til skrauts.</p>
-<p>Þá fór ég að skoða það sem hafði verið hannað áður á netinu og fann margar flottar útfærslur, sem má sjá á <a href="#">þessum hlekk</a>.</p>
 
-<h2>Ástæður fyrir samlagningarframleiðslu</h2>
-<p>Sítrónusafari kallar ekkert endilega á hönnun sem ekki væri hægt að framkvæma með frádráttarframleiðslu
-	en til að uppfylla kröfur verkefnisins hafði ég hann, þ.a. erfitt væri að gera hann með einfaldri frádráttarframleiðslu.</p>
-<p>Helsta takmörkun frádrátttarframleiðslu eru holrými, því tólin komast ekki þangað inn.
-	Hluturinn er með 15% infill, þ.a. að hann er að mestu holur að innan sem væru auðvitað ómögulegt með frádráttarframleiðslu. Það er samt ekki hluti af hönnun hlutarins.</p>
-<p>Þetta eru þrjú atriði í hönnun hlutarins sem væri erfitt að gera með frádráttarframleiðslu:</p>
-<ul>
-    <li>Annað atriði eru götin á botni safarans sem myndu vera áskorun fyrir 3-ása fræsara því hann myndi eiga í vandræðum með að komast að þeim.</li>
-    <li>Stórt atriði í þessu væri líka bara eyðsla á efni. Ef að það ætti að fræsa safarann úr gegnheilum kubbi af plasti yrði sóunin stjarnfræðileg.</li>
-</ul>
-
-<h2>Hönnun</h2>
-<p>Safarinn var teiknaður í Fusion 360. Ég notaðist við parametríska hönnun. Safarinn er hannaður til að passa fullkomlega ofan á glösin heima hjá mér. 
-	Til að ákvarða stærðirnar mældi ég sítrónu sem ég fann heima sem hafði ca. 5 cm ummál og glasið sem var með 7,5 cm ummál</p>
-								<figure style="text-align: center">
-									<img src="images/param_h%C3%B6nnun.JPG" alt="" style="width: 80%; height=auto">
-								</figure>
-<h2>Prentun</h2>
-<p>Þegar búið var að teikna hlutinn í Fusion er einfalt að koma honum í þrívíddarprentarann. Maður „exportar" hlutinn sem .3mf skrá í Fusion. Næst þarf að hlaða niður <a href="https://www.prusa3d.com/page/prusaslicer_424/">PrusaSlicer</a>. Þegar þangað er komið er bara hægt að draga hlutinn inn.</p>
-								<figure style="text-align: center">
-									<img src="images/3d_prusa_slice.JPG" alt="" style="width: 80%; height=auto">
-								</figure>
-<h2>Prófun</h2>
-<p>Það voru smá áhyggjur af „overhang" hlutarins, þ.e. efsta hluta hans. Ég hafði pælt í því við hönnunina og studdist við skemmtilegt plakat sem Maggi talaði um og má sjá hér fyrir neðan.</p>
-<p>Þar er talað um að láta hringlaga form vera tárlaga til að þau hrynji ekki. Ég gerði það en vildi samt vera alveg viss, þ.a. ég prentaði fjórðung af safaranum í 70% stærð til að lágmarka efnisnotkun og tíma prentunar. Það kom mjög vel út og ég ályktaði að ef oddurinn nær að standa einn og sér mun hann klárlega halda þegar restin styður við hann sömuleiðis.</p>
+<h2>Kerf prófun</h2>
+<p>Kerf prófunin var unnin í samstarfi við  <a href="#">Benna</a> og  <a href="#">Jovan</a>.
+	Kerf er þvermál geislans i geislaskeranum, það er mikilvægt að vita hvað það er svo hægt að sé að gera ráð fyrir því í skurðinum.
+	Það eru til margra leiðir til að áætla "kerf" geislaskera, þ.á.m. greiðu aðferðin sem Maggi lýsti. Við notuðum hinsvegar aðra aðferð. 
+	Hún felur í sér að skera út ramma með mörgum litlum kössum. Maður mælirs síðan heildarlengd rammans
+	síðan dregur maður frá getur samanlagða lengd allra kassanna. Það er líka bara hægt að mæla bara bilið sem myndast í enda rammans.
+	Þessa vegalengd deilir maður síðan í með fjölda skurða til að áætla þvermál geislans "kerf" geislaskerans. Kerf prófunirnar voru gerðar á 5 mm þykkum akrýl plötum.
+	
 <div style="display:flex; gap:16px; margin-bottom:1.5em;">
-	<figure style="flex:1; margin:0;">
-        <img src="images/3d_prof_m1.JPEG" alt="" style="width:100%; border-radius:4px;">
+    <figure style="flex:1; margin:0;">
+        <img src="images/IMG_1481.JPEG" alt="" style="width:100%; border-radius:4px;">
     </figure>
 	<figure style="flex:1; margin:0;">
-        <img src="images/3d_saman.JPEG" alt="" style="width:100%; border-radius:4px;">
-    </figure>	
-	</div>
-<h2>Lokaprentun</h2>
-<p>Þetta var prentað í Prusa MK3+.</p>
+        <img src="images/IMG_1482.JPEG" alt="" style="width:100%; border-radius:4px;">
+    </figure>								
+</div>
+
+<p>Með mælingum kom í ljós að bilið sem myndaðist vegna skurðarins var 3,78 mm. Fjöldi kassa í rammanum var 20 þ.a. bilin voru 21 talsins.
+								Þá fékkst að lokum að þvermál geislans væri 0,18 mm</p>					
+
+								
+<h2>Val á hugmynd</h2>
+<p>Mig langaði að gera eitthvað sem að mynda koma að miklum notum og væri fallegt. Í verkefnalýsingunni er lögð áhersla á geirnegldu punktana og lífræn form, þ.a. ég fór að hugsa um eitthvað sem var ekki kassalaga.
+Fyrst datt mér í hug að gera lóðastand fyrir handlóðin heima, en eftir smá rannsóknir komst ég að því að efnin sem eru í boði væru sennilega ekki nógu sterk.
+Þá fór ég næst að hugsa um ltlur hillur og rakst á bil í eldhúsinu hjá mér sem var alveg tilvalið. Það er staðsett á milli veggs og skáps og það eru tveir súlur í því sem að hillan gæti hangið í.
+Þetta bil er einmitt fyrir ofan kaffivélina þ.a. það væri tilvalið af að hillan myndi rúma kaffibaunapokann svo maður þyrfti ekki að fara langt að sækja hann. 
+Síðan hinum meginn væri hægt að hafa minni hillu fyrir kryddstauka. Þarna var hugmyndin full mótuð og þufti bara að gera nokkrar grunnmælingar og fara huga að forminu sem hillan ætti að taka
+</p>
+<div style="display:flex; gap:16px; margin-bottom:1.5em;">
+    <figure style="flex:1; margin:0;">
+        <img src="images/IMG_1470.JPEG" alt="" style="width:100%; border-radius:4px;">
+    </figure>
+	<figure style="flex:1; margin:0;">
+        <img src="images/IMG_1472.JPEG" alt="" style="width:100%; border-radius:4px;">
+    </figure>								
+</div>							
+
+								
+<h2>Frumhönnun- og teikning</h2>								
+<p>Ég vildi gera hönnun sem væri ekki með margar beinar línur, þ.a. fyrsta teikningin mín var mjög metnaðarfull og hillan nánast öll bogalöguð</p>
+<figure style="text-align: center; height: 1000px; overflow: hidden; margin-bottom: 1em;">
+    <img src="images/IMG_1529.JPEG" alt="" style="height: 100%; transform: rotate(-90deg); transform-origin: center center;">
+</figure>					
+<p>En síðan á næsta stigi hönnunar dróg ég aðeins úr fjölda beygja og hafði hana aðines meira beina. Mér fannst það fallegra og passa betur inn í eldhúsið</p>								
+
+<figure style="text-align: center; height: 1000px; overflow: hidden; margin-bottom: 1em;">
+    <img src="images/IMG_1528.JPEG" alt="" style="height: 100%; transform: rotate(-90deg); transform-origin: center center;">
+</figure>	
+								
+<div style="display:flex; gap:16px; margin-bottom:1.5em;">
+    <figure style="flex:1; margin:0;">
+        <img src="images/IMG_1530.JPEG" alt="" style="width:100%; border-radius:4px;">
+    </figure>
+	<figure style="flex:1; margin:0;">
+        <img src="images/IMG_1531.JPEG" alt="" style="width:100%; border-radius:4px;">
+    </figure>								
+</div>								
+<p>Þ.a. hillan hvílir ofan á efri súlunni og styður sig við neðri súluna til að vera bein. Þetta eru þá 3 tegundir hluta sem að hillan er búin til úr;
+	burðarimlar og tveir lengdir botnplata. Á myndinni eru burðarimlarnir 5 talsins en því má stýra með parametrum. Þða eru geirnelgdir punktar þar sem hillan mætir botnplötunum í endunum.
+	Í þessari frumhönnun voru teiknaðar geirneglingar líka fyrir miðju botnplatanna til að reyna hafa fleiri tegundir festinga, en við betri athugun voru þeir punktar tilgangslausir og gerðu hilluna ljótari því ákveðið að losa sig við þá.
+	Ég velti því mikið fyrir mér hvort ég gæti bætt við fleiri tegundum festinga eins og "wedge joint" en það gekk ekki fyrir þessa hönnun. 
+	Ég vona bara að frumleiki hönnunar og notagildi vegi upp á móti.
+	En þá er næsta skref að fara teikna hilluna í tölvu</p>							
+								
+<h2>Parametrísk hönnun í tölvu</h2>
+<p>Hillan var teiknuð í Fusion 360 og það var notast við parametríska hönnun. Það er allt parametrískt frá þykkt, lengd, hæð og yfir í fjölda burðarrimla</p>
+<figure style="text-align: center">
+	<img src="images/gs_parametrar.JPG" alt="" style="width: 100%; height=auto">
+</figure>
+
+
+								
+<p>Blaa</p>
+								
+								
+<h2>Prófun f. lokaskurð</h2>
+<p> Til að kanna hvort að hönnunin mín virki áður en allt er prentað var gerð sm,á prófun. 
+	Það voru tvö atriði sem ég vildi prófa voru</p>
+<ul>
+    <li>Hvort það væri hægt að setja hlutinn samann, þ.e. kerf</li>
+    <li>Beygjuna efst á hillunni, hvernig hún leggst að súlunni</li>
+</ul>
+								
+								
 <div style="display:flex; gap:16px; margin-bottom:1.5em;">
     <figure style="flex:1; margin:0;">
         <img src="images/3d_m1.JPEG" alt="" style="width:100%; border-radius:4px;">
@@ -103,11 +148,17 @@
     </figure>								
 </div>
 
+<h2>Lokaskurður</h2>								
+
+<p>Þá var loks</p>								
+								
+								
+								
 <h2>Límmiði</h2>
 <p>Í þessu verkefni þarf að byrja á því að velja hvað á vera á límmiðanum. Valmöguleikarnir er svo margir að það er gott að hugsa um takmörkum tækisins til að þrengja niður valið.
 Það er hægt að skera út línur inn á miðanum, en það getur flækt það að setja hann á verulega. Ef línan nær þvert yfir miðann er hann kominn í tvo hluta sem ég vil líka forðast. 
 Ég valdi að lokum mynd af vini mínum Sindra þegar við vorum í Edinborg. Þar er hann reykjandi fyrir utan krá, en sú mynd er mjög lýsandi fyrir hann. Hún hentaði líka vel á límmiða því hún er með flotta „silhouette“.
-Ég vann myndina í Canva en þurfti fyrst að taka út bakgrunninn. Það kostar í Canva þ.a. ég byrjaði á að finna frían „background remover“, remove.bg varð fyrir valinu sem virkaði mjög vel. 
+Ég vann myndina í Canva en þurfti fyrst að taka út bakgrunninn. Það kostar í Canva þ.a. ég byrjaði á að finna frían „background remover“,  <a href="remove.bg">remove.bg</a> varð fyrir valinu sem virkaði mjög vel. 
 </p>
 
 <div style="display:flex; gap:16px; margin-bottom:1.5em;">
@@ -134,14 +185,14 @@ Svartur vínyll varð fyrir valinu því hann kemur vel út á ljósum bakgrunni
 </div>
 
 <p>
-Ég lét hann hafa límiðann samdægurs með málningartepi til að auðvelda það að setja hann á eittvað. Límmiðinn endaði síðan á Kindle græjunni hans.							
+Ég lét hann hafa límiðann samdægurs með málningarteipi til að auðvelda það að setja hann á eittvað. Límmiðinn endaði síðan á Kindle græjunni hans og útkoman mjög fín.							
 </p>
 <div style="display:flex; gap:16px; margin-bottom:1.5em;">
 	<figure style="flex:1; margin:0;">
         <img src="images/l%C3%ADmmi%C3%B0i_tilb_afh.JPEG" alt="" style="width:100%; border-radius:4px;">
     </figure>
 	<figure style="flex:1; margin:0;">
-        <img src="images/l%C3%ADmmi%C3%B0i_%C3%A1_t%C3%A6ki.jpg" alt="" style="width:70%; border-radius:4px;">
+        <img src="images/l%C3%ADmmi%C3%B0i_%C3%A1_t%C3%A6ki.jpg" alt="" style="width:75%; border-radius:4px;">
     </figure>	
 </div>												
 								
@@ -221,7 +272,8 @@ function createViewer(viewerId, canvasId, loaderId, modelUrl) {
       const s = 2 / Math.max(size.x, size.y, size.z);
       model.scale.setScalar(s);
       model.position.sub(center.multiplyScalar(s));
-      model.position.y += size.y * s * 0.5;
+      model.position.y += size.y * s * 0.5+0.5;
+	  model.rotation.x = -Math.PI / 2;
 	  const d = 3;
       camera.position.set(d, d*0.6, d);
       controls.target.set(0, size.y*s*0.4, 0);
@@ -235,8 +287,7 @@ function createViewer(viewerId, canvasId, loaderId, modelUrl) {
 }
 
 // ← Add one line per model:
-createViewer('model-viewer',   'three-canvas',   'model-loader',   'models/3_1_2026.glb');
-createViewer('model-viewer-2', 'three-canvas-2', 'model-loader-2', 'models/tfram_verkefni_03_test_01.obj');
+createViewer('model-viewer-2', 'three-canvas-2', 'model-loader-2', 'models/verkefni_02_assembled.obj');
 </script>
 					</div>
 				
